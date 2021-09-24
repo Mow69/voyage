@@ -37,190 +37,38 @@
                 </div>
             </div>
             <div class="row">
+                @foreach ($tripList as $trip)
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="{{ asset('img/single_place_1.png') }}" alt="">
+                        <img src="{{ $trip->picture }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
+                                <a href="{{ route('trip', $trip->id) }}" class="place_btn">travel</a>
+                                <h3>{{ $trip->destination }}</h3>
+                                <p>{{ substr($trip->description, 0, 25) }}...</p>
                                 <div class="place_review">
+                                    {{-- // TODO: mettre les étoiles en dynamique --}}
+                                    {{-- @for($i=0; $i <= $trip->rating; $i++)
+                                        <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    @endfor --}}
+                                    {{-- @for($i=$trip->rating; $i <= 5; $i++)
+                                        <a href="{{ route('home') }}"><i class="fa fa-star-o"></i></a>
+                                    @endfor --}}
                                     <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
+                                    <span>({{ $trip->topPlace }} reviews)</span>
                             </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
+                        </div>
+                        <div class="details_icon text-right">
+                            <i class="ti-share"></i>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_2.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_3.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_4.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_1.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_2.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img src="{{ asset('img/single_place_3.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_place">
-                        <img  src="{{ asset('img/single_place_4.png') }}" alt="">
-                        <div class="hover_Text d-flex align-items-end justify-content-between">
-                            <div class="hover_text_iner">
-                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
-                                <h3>Saintmartine Iceland</h3>
-                                <p>Technaf, Bangladesh</p>
-                                <div class="place_review">
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                            </div>
-                            <div class="details_icon text-right">
-                                <i class="ti-share"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>            
+            @endforeach
             </div>
         </div>
     </section>

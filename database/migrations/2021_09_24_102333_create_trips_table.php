@@ -24,6 +24,7 @@ class CreateTripsTable extends Migration
             $table->string('organizer');
             $table->integer('rating');
             $table->string('picture');
+            $table->integer('topPlace');
         });
     }
 

@@ -3,7 +3,7 @@
 @yield('header')
 
 @yield('title')
-    <h1>{{ env('APP_NAME') }} | Trip {{ $id }}</h1>
+    <h1>{{ env('APP_NAME') }} | Trip {{ $trip->id }}</h1>
 @show
 
 @section('page-content')
@@ -18,65 +18,12 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h5>Upcoming Event</h5>
-                                        <h2>Maldeve - Asia</h2>
-                                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our. Air very one. Whales grass is fish whales winged.
-                                        </p>
-                                        <p>date: <span>12 Aug 2019</span> </p>
-                                        <p>Cost: <span>Start from $820</span> </p>
-                                        <p>Organizer: <span> Martine Agency</span> </p>
-                                        <div class="rating">
-                                            <span>Rating:</span>
-                                            <div class="place_review">
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                        <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="ol-lg-6 col-md-6">
-                                    <div class="event_slider_content">
-                                        <h5>Upcoming Event</h5>
-                                        <h2>Maldeve - Asia</h2>
-                                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our. Air very one. Whales grass is fish whales winged.
-                                        </p>
-                                        <p>date: <span>12 Aug 2019</span> </p>
-                                        <p>Cost: <span>Start from $820</span> </p>
-                                        <p>Organizer: <span> Martine Agency</span> </p>
-                                        <div class="rating">
-                                            <span>Rating:</span>
-                                            <div class="place_review">
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                            </div>
-                                        </div>
-                                        <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="ol-lg-6 col-md-6">
-                                    <div class="event_slider_content">
-                                        <h5>Upcoming Event</h5>
-                                        <h2>Maldeve - Asia</h2>
-                                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our. Air very one. Whales grass is fish whales winged.
-                                        </p>
-                                        <p>date: <span>12 Aug 2019</span> </p>
-                                        <p>Cost: <span>Start from $820</span> </p>
-                                        <p>Organizer: <span> Martine Agency</span> </p>
+                                        <h5>{{ $trip->status }}</h5>
+                                        <h2>{{ $trip->destination }}</h2>
+                                        <p>{{ $trip->description }}</p>
+                                        <p>date: <span>{{ $trip->date }}</span> </p>
+                                        <p>Cost: <span>Start from ${{ $trip->cost }}</span> </p>
+                                        <p>Organizer: <span> {{ $trip->organizer }}</span> </p>
                                         <div class="rating">
                                             <span>Rating:</span>
                                             <div class="place_review">
@@ -105,12 +52,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="content_iner">
-                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our Air very one. Whales grass is fish whales winged night yielding land creeping that seed appear were bearing.</p>
-                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our Air very one. Whales grass is fish whales winged night yielding land creeping that seed appear were bearing.
-                        Their</p>
-                        <p>Waters make fish every without firmament saw had. Morning air subdue. Our Air very one. Whales grass is fish whales winged night yielding land creeping that seed appear were bearing.</p>
+                        <p>{{ $trip->description }}</p>
+                        <p>{{ $trip->description }}</p>
+                        <p>{{ $trip->description }}</p>
                         <div class="tour_details_content_btn">
-                            <a href="{{ route('trip', $id) }}"class="btn_1">Book Ticket</a>
+                            <a href="{{ route('trip', $trip->id) }}"class="btn_1">Book Ticket</a>
                         </div>
                     </div>
                 </div>

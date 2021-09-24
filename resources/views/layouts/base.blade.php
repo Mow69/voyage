@@ -94,7 +94,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="{{ route('home') }}" id="navbarDropdown_1"
+                                                    <a class="nav-link dropdown-toggle" href="{{ route('trips') }}" id="navbarDropdown_1"
                                                         role="button" data-toggle="dropdown" aria-haspopup="true"
                                                         aria-expanded="false">
                                                         pages

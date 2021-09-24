@@ -2888,7 +2888,7 @@ ul {
 /***** event part css******/
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_event_part.scss */
 .event_part {
-  background-image: url(../img/event_bg.png);
+  background-image: url("https://source.unsplash.com/random/1600x900/?vacations,beach,island");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
