@@ -23,6 +23,7 @@ class CreateTripsTable extends Migration
             $table->integer('cost');
             $table->string('organizer');
             $table->integer('rating');
+            $table->string('picture');
         });
     }
 

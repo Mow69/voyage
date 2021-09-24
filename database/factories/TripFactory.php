@@ -29,6 +29,7 @@ class TripFactory extends Factory
             'cost' => $this->faker->numberBetween(200, 1200),
             'organizer' => $this->faker->name,
             'rating' => $this->faker->numberBetween(1, 5),
+            'picture' => "https://source.unsplash.com/1600x900/?vacations,beach,island",
         ];
     }
 }
