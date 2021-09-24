@@ -40,6 +40,9 @@ class StaticController extends Controller
 
     public function trip($id) {
         $trip = Trip::find($id);
+        $dtFormat = new \Datetime($trip->date);
+        $formatedDate = $dtFormat->format('d M Y');
+        $trip->date = $formatedDate;
         return view('trip.trip', ['trip' => $trip]);
     }
 
