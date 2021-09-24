@@ -47,18 +47,10 @@
                                 <h3>{{ $trip->destination }}</h3>
                                 <p>{{ substr($trip->description, 0, 25) }}...</p>
                                 <div class="place_review">
-                                    {{-- // TODO: mettre les étoiles en dynamique --}}
-                                    {{-- @for($i=0; $i <= $trip->rating; $i++)
+                                    @for($i=1; $i <= $trip->rating; $i++)
                                         <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    @endfor --}}
-                                    {{-- @for($i=$trip->rating; $i <= 5; $i++)
-                                        <a href="{{ route('home') }}"><i class="fa fa-star-o"></i></a>
-                                    @endfor --}}
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    @endfor
+                                    /5
                                     <span>({{ $trip->topPlace }} reviews)</span>
                             </div>
                         </div>

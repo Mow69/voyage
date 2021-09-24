@@ -27,11 +27,10 @@
                                         <div class="rating">
                                             <span>Rating:</span>
                                             <div class="place_review">
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
-                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                @for($i=1; $i <= $trip->rating; $i++)
+                                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                @endfor
+                                                /5
                                             </div>
                                         </div>
                                         <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
