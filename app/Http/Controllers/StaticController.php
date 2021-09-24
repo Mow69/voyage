@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 
 class StaticController extends Controller
 {
-    public function home() {
-        return view('home.home');
+    public function home($id = 1) {
+        return view('home.home', ['id' => $id]);
     }
 
-    public function trips() {
-        return view('trip.trips');
+    public function trips($id = 1) {
+        return view('trip.trips', ['id' => $id]);
     }
 
-    public function trip($id = null) {
+    public function trip($id = 1) {
         return view('trip.trip', ['id' => $id]);
     }
 

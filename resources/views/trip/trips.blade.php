@@ -39,18 +39,18 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_1.png" alt="">
+                        <img src="{{ asset('img/single_place_1.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -62,18 +62,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_2.png" alt="">
+                        <img src="{{ asset('img/single_place_2.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -85,18 +85,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_3.png" alt="">
+                        <img src="{{ asset('img/single_place_3.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -108,18 +108,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_4.png" alt="">
+                        <img src="{{ asset('img/single_place_4.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -131,18 +131,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_1.png" alt="">
+                        <img src="{{ asset('img/single_place_1.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -154,18 +154,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_2.png" alt="">
+                        <img src="{{ asset('img/single_place_2.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -177,18 +177,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_3.png" alt="">
+                        <img src="{{ asset('img/single_place_3.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>
@@ -200,18 +200,18 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/single_place_4.png" alt="">
+                        <img  src="{{ asset('img/single_place_4.png') }}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="trip" class="place_btn">travel</a>
+                                <a href="{{ route('trip' , $id) }}" class="place_btn">travel</a>
                                 <h3>Saintmartine Iceland</h3>
                                 <p>Technaf, Bangladesh</p>
                                 <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                    <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
                             </div>

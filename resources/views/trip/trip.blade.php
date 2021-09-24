@@ -28,14 +28,14 @@
                                         <div class="rating">
                                             <span>Rating:</span>
                                             <div class="place_review">
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                             </div>
                                         </div>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -54,14 +54,14 @@
                                         <div class="rating">
                                             <span>Rating:</span>
                                             <div class="place_review">
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                             </div>
                                         </div>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -80,14 +80,14 @@
                                         <div class="rating">
                                             <span>Rating:</span>
                                             <div class="place_review">
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
-                                                <a href="#"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
+                                                <a href="{{ route('home') }}"><i class="fas fa-star"></i></a>
                                             </div>
                                         </div>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="{{ route('home') }}" class="btn_1">Plan Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                         Their</p>
                         <p>Waters make fish every without firmament saw had. Morning air subdue. Our Air very one. Whales grass is fish whales winged night yielding land creeping that seed appear were bearing.</p>
                         <div class="tour_details_content_btn">
-                            <a href="contact" class="btn_1">Book Ticket</a>
+                            <a href="{{ route('trip', $id) }}"class="btn_1">Book Ticket</a>
                         </div>
                     </div>
                 </div>
